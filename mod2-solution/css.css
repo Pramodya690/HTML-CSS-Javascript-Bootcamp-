@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffd700; /* Example color for the section title region */
+    padding: 5px;
+    color: #000; /* Adjust text color based on background color readability */
+}
+
+/* Desktop view */
+.desktop {
+    float: left;
+    width: 33.33%;
+}
+
+/* Tablet view */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .desktop {
+        width: 50%;
+    }
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+    .desktop {
+        width: 100%;
+    }
+}
